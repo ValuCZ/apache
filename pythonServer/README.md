@@ -11,6 +11,7 @@ Tento jednoduchý Flask server umožňuje simulovat webový server pro mod balan
 
 1. Klonujte repozitář nebo si stáhněte skript `server.py`.
 2. Nainstalujte Flask pomocí `pip`:
+
     ```sh
     pip install -r requirements.txt
     ```
@@ -67,6 +68,20 @@ Tento jednoduchý Flask server umožňuje simulovat webový server pro mod balan
       "message": "State updated successfully"
     }
     ```
+
+    ### GET /
+
+    Vrátí HTML stránku s aktuálním status kódem a zprávou ve formátu moderní karty.
+
+    **Příklad použití:**
+
+    ```sh
+    curl http://127.0.0.1:<port_number>/
+    ```
+
+    **Odpověď:**
+
+    Otevřete URL `http://127.0.0.1:<port_number>/` ve vašem webovém prohlížeči, abyste viděli moderní kartu s názvem serveru, status kódem a zprávou.
 
 ## Příklad použití s více servery
 
